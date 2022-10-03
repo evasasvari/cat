@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+    <title>Cats and dogs</title>
+</head>
+<body>
+    <h1>Cats and Dogs</h1>
+    <script>
+        //asking the browse if it supports service worker
+        if ("serviceWorker" in navigator) {
+            console.log("Service worker is available")
+            navigator.serviceWorker.register("serviceworker.js");
+        } else { 
+            console.log("Service worker is not available")
+        }
+
+    </script>
+    
+</body>
+</html>
